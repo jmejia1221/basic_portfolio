@@ -1,0 +1,351 @@
+:root {
+    --button-green: #17A864;
+    --darker-blue: #101935;
+    --dark-blue: #132642;
+    --deep-blue: #273663;
+    --red: #780016;
+    --dark-red: #200006;
+    --darker-red: #110003;
+}
+* {
+    box-sizing: border-box;
+}
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+    /* font-family: Helvetica, sans-serif */
+}
+body {
+    background: #212020;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+body {
+    /* background: linear-gradient(-45deg, var(--button-green), #222, var(--deep-blue), var(--button-green)); */
+    background: linear-gradient(-45deg, #EE7752, var(--red), #23A6D5, var(--button-green));
+    /* background: linear-gradient(-45deg, 
+                var(--dark-red), 
+                var(--dark-blue), 
+                var(--darker-blue), 
+                var(--deep-blue)); */
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+.shards {
+    position: absolute;
+}
+.shard-1,
+.shard-2,
+.shard-3 {
+    position: absolute;
+}
+.shard-1 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 450px 300px 0 0;
+    transform: rotate(-35deg);
+    top: -290px;
+    left: -150px;
+    border-color: var(--dark-blue) 
+                transparent 
+                transparent 
+                transparent;
+}
+.shard-2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 450px 300px 0 0;
+    left: 40px;
+    top: -300px;
+    border-color: var(--darker-blue) 
+                transparent 
+                transparent 
+                transparent;
+}
+.shard-3 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 450px 300px 0 0;
+    transform: rotate(5deg);
+    top: -200px;
+    left: 10px;
+    border-color: var(--deep-blue) 
+                transparent 
+                transparent 
+                transparent;
+}
+.intro {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro-header {
+    color: azure;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.intro-title {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 5em;
+}
+.intro-subtitle {
+    font-size: 1.5em;
+    font-weight: 100;
+    margin: 5px 0 20px;
+}
+.button-github {
+    display: inline-block;
+    color: var(--button-green);
+    border: 1px solid var(--button-green);
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.button-github:hover {
+    background: var(--button-green);
+    color: #fff;
+}
+.about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.about-shards {
+    /* transform: rotate(60deg) scale(.8);
+    right: 40%;
+    top: 25%; */
+    transform: rotate(60deg) scale(1.5);
+    right: 40%;
+    top: 40%;
+}
+.about-container {
+    width: 50%;
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+}
+.about-title {
+    background: #fff;
+    width: 510px;
+    padding: 0 20px;
+    overflow-wrap: break-word;
+    background-color: #fff;
+    line-height: 1.5;
+    font-size: 2.2em;
+}
+.about-text {
+    background: #fff;
+    padding: 10px;
+    line-height: 1.5;
+}
+.portfolio {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+.portfolio-project {
+    width: 100%;
+    padding: 20px 40px;
+    position: relative;
+    background: #fff;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    transition: .5s all;
+}
+.portfolio-line {
+    width: 0;
+    height: 3px;
+    background: #fff;
+}
+.portfolio-info {
+    padding: 20px;
+}
+.portfolio-info,
+.portfolio-number,
+.portfolio-line,
+.button-arrow,
+.button-arrow-shaft {
+    transition: .5s all;
+}
+.portfolio-name {
+    font-size: 1.5em;
+}
+.portfolio-skills {
+    display: block;
+}
+.portfolio-button {
+    color: #222;
+    margin-left: auto;
+    position: relative;
+    text-decoration: none;
+}
+.portfolio-button .button-animation {
+    background: #222;
+    right: -40px;
+    left: 160px;
+    display: inline-block;
+    top: -40px;
+    height: 70px;
+    padding: 20px;
+    bottom: 0;
+    position: absolute;
+    transition: .5s all;
+    box-shadow: -9px 9px 0px -6px #999;
+}
+.button-arrow {
+    padding: 5px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    opacity: 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.button-arrow-shaft {
+    position: absolute;
+    background: #222;
+    width: 100px;
+    height: 2px;
+    top: -15px;
+}
+.portfolio-project:hover .portfolio-info {
+    color: #fff;
+}
+.portfolio-project:hover .portfolio-button .button-animation {
+    left: -30px;
+}
+.portfolio-project:hover .portfolio-button .button-text {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.portfolio-project:hover .portfolio-number {
+    color: #fff;
+    position: absolute;
+    font-size: 7em;
+    font-weight: bold;
+    opacity: .1;
+    left: 200px;
+}
+.portfolio-project:hover .portfolio-info {
+    padding: 20px;
+    position: relative;
+    left: 40px;
+    transform: scale(1.2);
+}
+.portfolio-project:hover .portfolio-line {
+    width: 150px;
+}
+.portfolio-project:hover .button-arrow {
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    left: 100px;
+    opacity: 1;
+    z-index: 1;
+}
+.portfolio-project:hover .button-arrow-shaft {
+    background: #fff;
+    width: 112px;
+    z-index: 1;
+}
+.portfolio-dark-blue {
+
+}
+.portfolio-darker-blue {
+
+}
+.portfolio-deep-blue {
+
+}
+.portfolio-light-blue {
+
+}
+.portfolio-darkest-blue {
+
+}
+.sweep-to-right {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: color 1000ms;
+  transition: color 1000ms;
+}
+.sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--darker-blue);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: .5s ease-out;
+    transition: .5s ease-out;
+}
+.sweep-to-right:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
