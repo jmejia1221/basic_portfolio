@@ -86,6 +86,8 @@ body {
 .shard-2,
 .shard-3 {
     position: absolute;
+    opacity: .8;
+    box-shadow: rgb(75, 43, 138) 0px 0px 150px;
 }
 .shard-1 {
     width: 0;
