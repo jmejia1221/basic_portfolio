@@ -154,13 +154,16 @@ body {
     display: inline-block;
     color: var(--button-green);
     border: 1px solid var(--button-green);
+    transition: .5s;
     padding: 10px 30px;
     text-decoration: none;
     text-transform: uppercase;
+    background: rgb(13, 236, 82, .1);
 }
 .button-github:hover {
-    background: var(--button-green);
     color: #fff;
+    box-shadow: rgb(7, 208, 69) 0px 0px 150px;
+    background: rgb(13, 236, 82, .3);
 }
 .about {
     height: 100vh;
