@@ -31,8 +31,9 @@ h6 {
     margin: 0;
 }
 body {
+    background: var(--darker-blue);
     /* background: linear-gradient(-45deg, var(--button-green), #222, var(--deep-blue), var(--button-green)); */
-    background: linear-gradient(-45deg, #EE7752, var(--red), #23A6D5, var(--button-green));
+    /* background: linear-gradient(-45deg, #EE7752, var(--red), #23A6D5, var(--button-green)); */
     /* background: linear-gradient(-45deg, 
                 var(--dark-red), 
                 var(--dark-blue), 
@@ -44,7 +45,7 @@ body {
 	animation: Gradient 15s ease infinite;
 }
 
-@-webkit-keyframes Gradient {
+/* @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
 	}
@@ -78,7 +79,7 @@ body {
 	100% {
 		background-position: 0% 50%
 	}
-}
+} */
 .shards {
     position: absolute;
 }
