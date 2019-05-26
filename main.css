@@ -413,7 +413,8 @@ textarea:focus, input:focus {
         width: 100%;
         font-size: 1.5em;
     }
-    .contact-container {
+    .contact-container,
+    .about-container {
         width: 90%;
     }
     .contact-info,
