@@ -361,6 +361,7 @@ body {
 .contact-form {
     display: flex;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 .contact-input {
     text-align: right;
@@ -406,4 +407,17 @@ body {
 textarea:focus, input:focus {
     outline: none;
     transition: .5s all;
+}
+@media only screen and (max-width: 900px) {
+    .about-title {
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .contact-container {
+        width: 90%;
+    }
+    .contact-info,
+    .contact-input {
+        width: 100%;
+    }
 }
