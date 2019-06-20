@@ -195,6 +195,7 @@ body {
     margin-left: auto;
     position: relative;
     text-decoration: none;
+    cursor: pointer;
 }
 .portfolio-button .button-animation {
     background: #222;
@@ -361,6 +362,35 @@ body {
 textarea:focus, input:focus {
     outline: none;
     transition: .5s all;
+}
+.modal {
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.modal-content {
+    background: #f8f8f8;
+    width: 80%;
+    max-height: 400px;
+    padding: 30px;
+    overflow: hidden;
+    overflow-y: auto;
+    margin: 10% auto;
+    position: relative;
+    border-radius: 3px;
+}
+.close-modal {
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 5px;
 }
 @media (min-width:1025px) { 
     body {
